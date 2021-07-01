@@ -27,3 +27,5 @@ It will then display the calendard.
 The event module is just being started and this will display events on the calendar in a similar manner as Google Calendar does.
 
 https://github.com/karlgray/tailwind-calendar/blob/master/calendar.png
+
+![Alt text](/karlgray/tailwind-calendar/blob/master/calendar.png?raw=true )
