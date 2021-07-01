@@ -28,4 +28,4 @@ The event module is just being started and this will display events on the calen
 
 https://github.com/karlgray/tailwind-calendar/blob/master/calendar.png
 
-![Alt text](/blob/master/calendar.png?raw=true )
+![Alt text](/calendar.png?raw=true )
