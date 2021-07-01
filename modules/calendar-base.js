@@ -84,12 +84,12 @@ export { buildCalendar };
 				// do Grid border for last rows and last columns
 				if (row == numRows)
 				{
-					gridBody.classList.add = 'bborder';
+					grid.classList.add('bborder');
 				}
 				
 				if (column == 7)
 				{
-					gridBody.classList.add = 'rborder';
+					grid.classList.add('rborder');
 				}
 
 				// Add event area
