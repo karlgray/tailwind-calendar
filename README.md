@@ -3,6 +3,7 @@ Introduction
 I am not a front end developer and haven't done much in the way of javascript before.
 
 I needed a calendar that would allow me to book timeslots that go overnight.  Think campsites, hotels, parking slots etc.
+It needs to accept month and year, then calculate the start day of the week and populate as required.
 
 For various reason I decided to do this in raw JS without any dependencies and using tailwind to give a nice look.
 
@@ -25,7 +26,5 @@ Where month is a number, no leading zero with January being 1 and December being
 It will then display the calendard.
 
 The event module is just being started and this will display events on the calendar in a similar manner as Google Calendar does.
-
-https://github.com/karlgray/tailwind-calendar/blob/master/calendar.png
 
 ![Alt text](/calendar.png?raw=true )
