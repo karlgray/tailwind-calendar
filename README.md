@@ -30,4 +30,6 @@ It will then display the calendar.
 
 The event module is just being started and this will display events on the calendar in a similar manner as Google Calendar does.
 
+PS: You may also notice I have never used markdown before either...
+
 ![Alt text](/calendar.png?raw=true )
