@@ -1,0 +1,22 @@
+.DS_Store
+
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+*/config/config.php
+*/config/database.php
+
+booking-data.php
+bookings.php
+composer.lock

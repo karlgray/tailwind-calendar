@@ -1,0 +1,22 @@
+.rborder
+{
+	border-right: 1px solid #e2e8f0;
+}
+
+.bborder
+{
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.day-container
+{
+	min-height:  10vh;
+	border-top: 1px solid #e2e8f0;
+	border-left: 1px solid #e2e8f0;
+	background-color: white;
+	padding-left: 0px;
+	padding-top: 5px;
+}
+.day-header{
+	height:  30px;
+}
