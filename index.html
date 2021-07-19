@@ -1,11 +1,11 @@
-<!doctype html>
-	<html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="./css/tailwind.css" rel="stylesheet">
-		<link href="./css/calendar.css" rel="stylesheet">
-		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./css/tailwind.css" rel="stylesheet">
+	<link href="./css/calendar.css" rel="stylesheet">
+	<script type="text/javascript" src="bookings-small.js"></script>
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
 </head>
 
@@ -29,8 +29,22 @@
 </body>
 <script type="module">
 	import {buildCalendar} from './modules/calendar-base.js';
+	import {insertBookings} from './modules/calendar-bookings.js';
+
+	//json = require('./events.json');
+
+	var bookings = JSON.parse(bookings_json);
+
 	buildCalendar(7, 2021);
+	insertBookings(bookings);
+
+	
+	//testday.appendChild(p);
+
 </script>
 
+<script type="text/javascript">
+
+</script>
 
 </html>

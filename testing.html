@@ -1,0 +1,282 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./css/tailwind.css" rel="stylesheet">
+	<link href="./css/calendar.css" rel="stylesheet">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+</head>
+
+<body>
+	<div class="container mx-auto">
+		<div id="calendar-container" >
+			<div class="grid grid-cols-7 grid-row-1 bg-gray-50 auto-rows-fr gap-2 px-4 pt-4">
+				<div class="day-header pl-2">Mon</div>
+				<div class="day-header pl-2">Tue</div>
+				<div class="day-header pl-2">Wed</div>
+				<div class="day-header pl-2">Thu</div>
+				<div class="day-header pl-2">Fri</div>
+				<div class="day-header pl-2">Sat</div>
+				<div class="day-header pl-2">Sun</div>
+			</div>
+			<div id="gridBody" class="grid grid-cols-7 bg-gray-50 auto-rows-fr px-4 pb-4">
+
+				<div class="day-container"></div>
+				<div class="day-container"></div>
+				<div class="day-container"></div>
+				<div class="day-container" id="day-1">
+					<p class="pl-2">1</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-1" data-max-size="8"></div>
+						<div id="event-area-pm-1" data-max-size="7"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-2">
+					<p class="pl-2">2</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-2" data-max-size="6"></div>
+						<div id="event-area-pm-2" data-max-size="5"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-3">
+					<p class="pl-2">3</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-3" data-max-size="4"></div>
+						<div id="event-area-pm-3" data-max-size="3"></div>
+					</div>
+				</div>
+				<div class="day-container rborder" id="day-4">
+					<p class="pl-2">4</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-4" data-max-size="2"></div>
+						<div id="event-area-pm-4" data-max-size="1">
+							
+						</div>
+					</div>
+				</div>
+				<div class="day-container" id="day-5">
+					<p class="pl-2">5</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-5" data-max-size="14">
+							<p class="whitespace-nowrap z-10 relative ml-1 pl-4 rounded-l border border-black bg-blue-100" style="width: 1400%;">testing very long text with more text and more space to grow</p>
+						</div>
+						<div id="event-area-pm-5" data-max-size="13"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-6">
+					<p class="pl-2">6</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-6" data-max-size="12"></div>
+						<div id="event-area-pm-6" data-max-size="11">
+							<p class="m-1">&nbsp;</p>
+							<p class="whitespace-nowrap bg-blue-500 z-10 my-1 pl-4 relative rounded-l border border-black" style="width: 1100%;">testing very long text with more text and more space to grow</p>
+							<p class="whitespace-nowrap bg-blue-500 z-10 my-1 pl-4 relative rounded-l border border-black" style="width: 1000%;">testing very long text with more text and more space to grow</p>
+							<p class="whitespace-nowrap bg-blue-500 z-10 my-1 pl-4 relative rounded-l border border-black" style="width: 800%;">testing very long text with more text and more space to grow</p>
+							<p class="whitespace-nowrap bg-blue-500 z-10 my-1 pl-4 relative rounded-l border border-black" style="width: 600%;">testing very long text with more text and more space to grow</p>
+						</div>
+					</div>
+				</div>
+				<div class="day-container" id="day-7">
+					<p class="pl-2">7</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-7" data-max-size="10"></div>
+						<div id="event-area-pm-7" data-max-size="9"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-8">
+					<p class="pl-2">8</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-8" data-max-size="8"></div>
+						<div id="event-area-pm-8" data-max-size="7"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-9">
+					<p class="pl-2">9</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-9" data-max-size="6"></div>
+						<div id="event-area-pm-9" data-max-size="5"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-10">
+					<p class="pl-2">10</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-10" data-max-size="4"></div>
+						<div id="event-area-pm-10" data-max-size="3"></div>
+					</div>
+				</div>
+				<div class="day-container rborder" id="day-11">
+					<p class="pl-2">11</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-11" data-max-size="2"></div>
+						<div id="event-area-pm-11" data-max-size="1"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-12">
+					<p class="pl-2">12</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-12" data-max-size="14"></div>
+						<div id="event-area-pm-12" data-max-size="13"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-13">
+					<p class="pl-2">13</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-13" data-max-size="12"></div>
+						<div id="event-area-pm-13" data-max-size="11"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-14">
+					<p class="pl-2">14</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-14" data-max-size="10"></div>
+						<div id="event-area-pm-14" data-max-size="9"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-15">
+					<p class="pl-2">15</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-15" data-max-size="8"></div>
+						<div id="event-area-pm-15" data-max-size="7"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-16">
+					<p class="pl-2">16</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-16" data-max-size="6"></div>
+						<div id="event-area-pm-16" data-max-size="5"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-17">
+					<p class="pl-2">17</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-17" data-max-size="4"></div>
+						<div id="event-area-pm-17" data-max-size="3"></div>
+					</div>
+				</div>
+				<div class="day-container rborder" id="day-18">
+					<p class="pl-2">18</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-18" data-max-size="2"></div>
+						<div id="event-area-pm-18" data-max-size="1"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-19">
+					<p class="pl-2">19</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-19" data-max-size="14"></div>
+						<div id="event-area-pm-19" data-max-size="13"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-20">
+					<p class="pl-2">20</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-20" data-max-size="12"></div>
+						<div id="event-area-pm-20" data-max-size="11"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-21">
+					<p class="pl-2">21</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-21" data-max-size="10"></div>
+						<div id="event-area-pm-21" data-max-size="9"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-22">
+					<p class="pl-2">22</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-22" data-max-size="8"></div>
+						<div id="event-area-pm-22" data-max-size="7"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-23">
+					<p class="pl-2">23</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-23" data-max-size="6"></div>
+						<div id="event-area-pm-23" data-max-size="5"></div>
+					</div>
+				</div>
+				<div class="day-container" id="day-24">
+					<p class="pl-2">24</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-24" data-max-size="4"></div>
+						<div id="event-area-pm-24" data-max-size="3"></div>
+					</div>
+				</div>
+				<div class="day-container rborder" id="day-25">
+					<p class="pl-2">25</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-25" data-max-size="2"></div>
+						<div id="event-area-pm-25" data-max-size="1"></div>
+					</div>
+				</div>
+				<div class="day-container bborder" id="day-26">
+					<p class="pl-2">26</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-26" data-max-size="14"></div>
+						<div id="event-area-pm-26" data-max-size="13"></div>
+					</div>
+				</div>
+				<div class="day-container bborder" id="day-27">
+					<p class="pl-2">27</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-27" data-max-size="12"></div>
+						<div id="event-area-pm-27" data-max-size="11"></div>
+					</div>
+				</div>
+				<div class="day-container bborder" id="day-28">
+					<p class="pl-2">28</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-28" data-max-size="10"></div>
+						<div id="event-area-pm-28" data-max-size="9"></div>
+					</div>
+				</div>
+				<div class="day-container bborder" id="day-29">
+					<p class="pl-2">29</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-29" data-max-size="8"></div>
+						<div id="event-area-pm-29" data-max-size="7"></div>
+					</div>
+				</div>
+				<div class="day-container bborder" id="day-30">
+					<p class="pl-2">30</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-30" data-max-size="6"></div>
+						<div id="event-area-pm-30" data-max-size="5"></div>
+					</div>
+				</div>
+				<div class="day-container bborder" id="day-31">
+					<p class="pl-2">31</p>
+					<div class="grid grid-cols-2">
+						<div id="event-area-am-31" data-max-size="4"></div>
+						<div id="event-area-pm-31" data-max-size="3"></div>
+					</div>
+				</div>
+				<div class="day-container bborder rborder"></div>
+			</div>
+		</div>
+	</div>
+	<style type="text/css">
+	.arrow-right {
+		width: 0; 
+		height: 0; 
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+
+		border-left: 10px solid green;
+	}
+
+	.arrow-left {
+		width: 0; 
+		height: 0; 
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent; 
+
+		border-right:10px solid blue; 
+	}
+</style>
+</body>
+
+</html>
+
+

@@ -46,14 +46,23 @@ export { buildCalendar };
 
 		for (row = 1; row <= numRows; row++)
 		{
+			var offset = 14;
 			for (column = 1; column <= 7; column++)
 			{
 				var grid = document.createElement("div");
 				grid.className = 'day-container';
+				
 
 				if ( (row == 1 && column <startDay ) || day > daysInMonth)
 				{
 					// In case we want to do anything with padding days.
+
+					//am
+					offset--;
+
+					//pm
+					offset--;
+
 				}
 				else
 				{
@@ -64,14 +73,17 @@ export { buildCalendar };
 					grid.appendChild(p)
 					grid.id = 'day-' + day;
 
+					// Create event area.  div with an am and pm div within.
 					var eventArea = document.createElement('div');
-					//eventArea.id = 'eventArea-' + day;
 					eventArea.classList.add('grid', 'grid-cols-2');
 					
 					var am = document.createElement('div');
-					am.id = 'eventArea-am-' + day;
+					am.id = 'event-area-am-' + day;
+					am.dataset.maxSize = offset--;
+					
 					var pm = document.createElement('div');
-					pm.id = 'eventArea-pm-' + day;
+					pm.id = 'event-area-pm-' + day;
+					pm.dataset.maxSize = offset--;
 
 					eventArea.appendChild(am);
 					eventArea.appendChild(pm);
@@ -92,7 +104,7 @@ export { buildCalendar };
 					grid.classList.add('rborder');
 				}
 
-				// Add event area
+				// Add grid to calendar.
 
 				var gridBody = document.getElementById("gridBody");
 				gridBody.appendChild(grid);
